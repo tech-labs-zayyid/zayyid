@@ -20,11 +20,11 @@ export const SectionParticles: React.FC<SectionParticlesProps> = ({
     const baseConfig = {
       background: {
         color: {
-          value: 'transparent',
-        },
+          value: 'transparent'
+        }
       },
       fpsLimit: 120,
-      detectRetina: true,
+      detectRetina: true
     };
 
     const configs = {
@@ -32,55 +32,55 @@ export const SectionParticles: React.FC<SectionParticlesProps> = ({
         ...baseConfig,
         particles: {
           color: {
-            value: variant === 'light' ? '#6366f1' : '#ffffff',
+            value: variant === 'light' ? '#6366f1' : '#ffffff'
           },
           links: {
             color: variant === 'light' ? '#6366f1' : '#ffffff',
             distance: 150,
             enable: true,
             opacity: variant === 'light' ? 0.2 : 0.4,
-            width: 1,
+            width: 1
           },
           move: {
             direction: 'none',
             enable: true,
             outModes: {
-              default: 'bounce',
+              default: 'bounce'
             },
             random: false,
             speed: 0.8,
-            straight: false,
+            straight: false
           },
           number: {
             density: {
               enable: true,
-              area: 800,
+              area: 800
             },
-            value: 40,
+            value: 40
           },
           opacity: {
-            value: variant === 'light' ? 0.2 : 0.4,
+            value: variant === 'light' ? 0.2 : 0.4
           },
           shape: {
-            type: 'circle',
+            type: 'circle'
           },
           size: {
-            value: { min: 1, max: 2 },
-          },
-        },
+            value: { min: 1, max: 2 }
+          }
+        }
       },
       connect: {
         ...baseConfig,
         particles: {
           color: {
-            value: variant === 'light' ? '#6366f1' : '#ffffff',
+            value: variant === 'light' ? '#6366f1' : '#ffffff'
           },
           links: {
             color: variant === 'light' ? '#6366f1' : '#ffffff',
             distance: 200,
             enable: true,
             opacity: 0.2,
-            width: 1,
+            width: 1
           },
           move: {
             enable: true,
@@ -89,71 +89,71 @@ export const SectionParticles: React.FC<SectionParticlesProps> = ({
             random: true,
             straight: false,
             outModes: {
-              default: 'out',
-            },
+              default: 'out'
+            }
           },
           number: {
             density: {
               enable: true,
-              area: 800,
+              area: 800
             },
-            value: 60,
+            value: 60
           },
           opacity: {
-            value: 0.3,
+            value: 0.3
           },
           shape: {
-            type: ['circle', 'triangle', 'square'],
+            type: ['circle', 'triangle', 'square']
           },
           size: {
-            value: { min: 1, max: 3 },
-          },
-        },
+            value: { min: 1, max: 3 }
+          }
+        }
       },
       bubbles: {
         ...baseConfig,
         particles: {
           color: {
-            value: variant === 'light' ? '#6366f1' : '#ffffff',
+            value: variant === 'light' ? '#6366f1' : '#ffffff'
           },
           move: {
             direction: 'none',
             enable: true,
             outModes: {
-              default: 'bounce',
+              default: 'bounce'
             },
             random: true,
             speed: 0.8,
-            straight: false,
+            straight: false
           },
           number: {
             density: {
               enable: true,
-              area: 800,
+              area: 800
             },
-            value: 80,
+            value: 80
           },
           opacity: {
             animation: {
               enable: true,
               speed: 0.3,
-              sync: false,
+              sync: false
             },
-            value: { min: 0.1, max: 0.5 },
+            value: { min: 0.1, max: 0.5 }
           },
           shape: {
-            type: 'circle',
+            type: 'circle'
           },
           size: {
             value: { min: 1, max: 5 },
             animation: {
               enable: true,
               speed: 2,
-              sync: false,
-            },
-          },
-        },
-      },
+              sync: false
+            }
+          }
+        }
+      }
     };
 
     return configs[type];

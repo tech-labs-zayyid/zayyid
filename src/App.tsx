@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { content } from './data/content';
 import { ParticlesBackground } from './components/Particles';
 import { SectionParticles } from './components/SectionParticles';
@@ -12,7 +12,7 @@ const icons = {
   'smartphone': Smartphone,
   'monitor': Monitor,
   'cloud': Cloud,
-  'code': Code,
+  'code': Code
 };
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
         <meta property="og:title" content="Zayyid IT Consulting - Solusi Digital Inovatif untuk Bisnis Anda" />
         <meta property="og:description" content="Zayyid IT Consulting menyediakan layanan pengembangan teknologi untuk meningkatkan produktivitas bisnis Anda dengan solusi yang inovatif, aman, dan kustom." />
         <meta property="og:image" content="URL_gambar_tampilan" />
-        <meta property="og:url" content="https://zayyidit.com" />
+        <meta property="og:url" content="https://zayyid.com" />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Helmet>
@@ -44,12 +44,17 @@ function App() {
             <img
               src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=2000&q=80"
               alt="Technology Background"
+              loading='lazy'
               className="w-full h-full object-cover opacity-10"
             />
           </div>
           <div className="max-w-4xl mx-auto relative z-10">
-            <h1 className="text-5xl md:text-7xl font-bold text-indigo-900 mb-6 animate-slide-up">{t.hero.title}</h1>
-            <p className="text-xl md:text-2xl text-indigo-700 animate-slide-up animate-delay-200">{t.hero.subtitle}</p>
+            <h1 className="text-5xl md:text-7xl font-bold text-indigo-900 mb-6 animate-slide-up">
+              {t.hero.title}
+            </h1>
+            <p className="text-xl md:text-2xl text-indigo-700 animate-slide-up animate-delay-200">
+              {t.hero.subtitle}
+            </p>
           </div>
         </section>
 
@@ -194,6 +199,7 @@ function App() {
             <div className="relative animate-fade-in animate-delay-300">
               <img
                 src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80"
+                loading='lazy'
                 alt="Office"
                 className="w-full h-64 object-cover rounded-lg mb-8 opacity-50 transition-transform hover:scale-105 duration-500"
               />

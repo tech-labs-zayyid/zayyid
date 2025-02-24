@@ -133,7 +133,7 @@ export const content: Record<'id' | 'en', LanguageContent> = {
       subtitle: 'Kami siap membantu Anda dalam menciptakan solusi teknologi terbaik untuk bisnis Anda. Hubungi kami sekarang!',
       cta: 'Konsultasi Gratis Sekarang',
       info: {
-        email: 'contact@zayyidit.com',
+        email: 'contact@zayyid.com',
         phone: '+62 812-3456-7890',
         address: 'Jakarta, Indonesia'
       }
